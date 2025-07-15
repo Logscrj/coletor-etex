@@ -42,7 +42,7 @@ const materials = {
     "93037": "CH V GYP ST BR9,5-120X240",
     "93038": "CP V QUALIGESSOCOLA 20Kg",
     "93041": "CP V QUALIGESSOCOLA 5Kg",
-    "93044": "GESSO V QUALIGESSO  60 40Kg",
+    "93044": "GESSO V QUALIGESSO 60 40Kg",
     "93521": "CP V GYP MASSA PO 20Kg",
     "93522": "CP V GYP COLA 20Kg",
     "93524": "CP V GYP FGA COLA 20Kg",
@@ -76,7 +76,7 @@ const materials = {
     "112853": "CH I SOM L5/80 N8 BR 12,5-120X240 (OG)",
     "113814": "CH V GYP ST BR12,5-120X250 (OG)",
     "114610": "CH I SOM R15N8 BR12,5-120X240 (OG)",
-    "124451": "SUPERBOARD ST BQ  10MM 1200X2400",
+    "124451": "SUPERBOARD ST BQ 10MM 1200X2400",
     "129051": "CH I GYP FGR LINHO BQ9,5-0,618x1,243CX8",
     "130299": "PROMATECT H 15 mm 1200 x 2400 mm",
     "132059": "PROMATECT H 12 mm 1200 x 2400 mm",
@@ -110,13 +110,13 @@ const materials = {
     "142684": "MULTIPLACA 1240 x 2540 x 4 mm BR",
     "142685": "SUPERBOARD ST BQ 6MM 1200X2400",
     "142686": "SUPERBOARD ST BQ 8MM 1200X2400",
-    "142687": "SUPERBOARD ST BQ  10MM 1200X2400",
+    "142687": "SUPERBOARD ST BQ 10MM 1200X2400",
     "142688": "SUPERBOARD 4PRO 4L 8MM 1200X2400",
     "143015": "SUPERBOARD 4PRO 4L 10MM 1200X2400",
     "143016": "SUPERBOARD ENTREPISO 1220X2440X14 MM BR",
     "143359": "GESSO V QUALIGESSO MULTIUSO 1 KG",
-    "143360": "GESSO V QUALIGESSO  60 5Kg",
-    "143362": "GESSO V QUALIGESSO  60 20Kg",
+    "143360": "GESSO V QUALIGESSO 60 5Kg",
+    "143362": "GESSO V QUALIGESSO 60 20Kg",
     "143720": "CH V GYP ST BR15,0-120X271",
     "145089": "CH V GYP ST BR12,5-120X265 (OG)",
     "145091": "CH V GYP ST BR12,5-120X275 (OG)",
@@ -395,7 +395,7 @@ function saveInventoryData() {
 function loadInventoryData() {
     try {
         const data = localStorage.getItem('coletorEtexInventory');
-        if (data) {
+        if data) {
             inventoryData = JSON.parse(data);
         }
     } catch (error) {
